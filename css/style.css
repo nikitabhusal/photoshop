@@ -1,0 +1,278 @@
+/* RESET CSS BEGIN */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*RESET CSS END*/
+
+/* HELPER CLASSES BEGIN */
+.alignLeft {
+  float: left;
+}
+
+.alignRight {
+  float: right;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+/*HELPER CLASSES END*/
+
+/* rules */
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto-Regular.otf"), url("Roboto-Regular.otf") format("opentype");
+}
+
+#hero {
+  background-image: url("../img/cc.png");
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 40px 20px;
+}
+
+.shape {
+  float: left;
+  padding: 0.5%;
+  font-family: "Roboto-Regular";
+}
+
+.logo-img {
+  width: 58% !important;
+  padding-left: 15%;
+}
+
+.match {
+  padding: 0 14%;
+}
+.info {
+  padding: 0 14%;
+}
+.logo1-img {
+  padding: 1.2%;
+}
+/*navbar styling */
+.navbar {
+  padding-top: 10%;
+}
+.nav li {
+  display: inline-block;
+  padding-left: 0 5%;
+}
+.nav li a {
+  color: white;
+  text-decoration: none;
+}
+/****navbar end****/
+
+.match {
+  padding-top: 0%;
+  padding-bottom: 2%;
+}
+.info {
+  display: inline-flex;
+  margin-top: 30px;
+  column-count: 3;
+}
+.column {
+  width: 33%;
+  padding: 12px;
+}
+.column p {
+  font-size: 12px;
+  line-height: 15px;
+  padding-top: 9px;
+}
+
+/*news and press */
+.news {
+  padding: 20px 10px;
+}
+
+.ul-posts li {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.paragraph {
+  padding-top: 6%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 3%;
+}
+.paragraph p {
+  padding: 1%;
+}
+.press {
+  column-count: 3;
+
+  margin-top: 30px;
+}
+.col-4-footer {
+  background-color: white;
+  border-radius: 25px;
+  width: 299px;
+  height: 200px;
+  border: 1px solid;
+  padding: 10px 10px;
+  margin: 40px;
+}
