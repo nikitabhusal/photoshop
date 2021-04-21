@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto-Regular.otf"), url("Roboto-Regular.otf") format("opentype");
+}
+
+#hero {
+  background-image: url("../img/cc.png");
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.container {
+  max-width: 1200px;
+  height: 12%;
+  /*width: 40%;*/
+  margin: 0 auto;
+  position: relative;
+  padding: 40px 20px;
+}
+.container1 {
+  background-color: #fff7f0;
+}
+
+.shape {
+  font-size: 16pt;
+  float: left;
+  padding: 0.5%;
+  font-family: "Roboto-Regular";
+}
+.img11 {
+  width: 58% !important;
+  padding-left: 15%;
+}
+.paragraph {
+  margin: 130px 265px 0px 265px;
+}
+.grow {
+  font-size: 36pt;
+}
+.grow1 {
+  font-size: 18pt;
+}
+.services {
+  display: flex;
+  margin: 1.5px;
+  background-color: #fff7f0;
+}
+.div1 {
+  margin: 1%;
+  border: 1px solid;
+  padding: 3px;
+  border-radius: 15px;
+  width: 12%;
+}
+.div {
+  padding-top: 35px;
+}
+.protect {
+  text-align: center;
+}
+.protect1 {
+  font-size: 25pt;
+  font-style: regular;
+}
+.cloud {
+  font-size: 16pt;
+}
+
+.success {
+  display: inline-flex;
+  margin-top: 30px;
+  column-count: 3;
+}
+.succ {
+  width: 33%;
+  padding: 12px;
+}
+
+.identity {
+  text-align: center;
+  font-size: 60pt;
+}
+.dia {
+  text-align: center;
+  font-size: 30pt;
+}
+
+.diagram1 {
+  display: flex;
+}
+.dig {
+  margin-top: 250px;
+  padding-left: 30px;
+}
+.dig1 {
+  width: 1000px;
+  padding: 0px 0px 0px 30px;
+}
+.color {
+  background-color: #ecf3f4;
+}
+.dig2 {
+  width: 1000px;
+  padding-bottom: 154px;
+}
+
+.line1 {
+  width: 500px;
+  height: 40px;
+}
+.rectangle {
+  width: 100%;
+}
+
+.rectangleimg2 {
+  width: 750px;
+  height: 300px;
+  padding: 10px 0px 10px 450px;
+}
