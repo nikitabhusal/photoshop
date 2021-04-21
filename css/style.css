@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
 /* RESET CSS BEGIN */
 html,
 body,
@@ -102,6 +103,7 @@ section {
   display: block;
 }
 body {
+  font-family: "Open Sans", sans-serif;
   line-height: 1;
 }
 ol,
@@ -169,12 +171,6 @@ ol li {
 
 /*HELPER CLASSES END*/
 
-/* rules */
-@font-face {
-  font-family: "Roboto-Regular";
-  src: local("Roboto-Regular.otf"), url("Roboto-Regular.otf") format("opentype");
-}
-
 #hero {
   background-image: url("../img/cc.png");
   color: white;
@@ -182,37 +178,49 @@ ol li {
   background-position: center;
   background-attachment: fixed;
 }
+
 .container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+  background-image: url("../img/cc.png");
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  max-height: 600px;
   position: relative;
-  padding: 40px 20px;
+  padding-top: 20px;
 }
 
-.shape {
-  float: left;
-  padding: 0.5%;
-  font-family: "Roboto-Regular";
+.header {
+  margin: 0 2%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo-img {
-  width: 58% !important;
-  padding-left: 15%;
+  float: left;
 }
 
-.match {
-  padding: 0 14%;
+.logo ul {
+  width: 100%;
 }
-.info {
-  padding: 0 14%;
+
+.logo ul li {
+  padding-left: 5px;
+  font-size: 30px;
+  line-height: 33px;
 }
-.logo1-img {
-  padding: 1.2%;
+
+.logo ul li:nth-child(2),
+.nav li:nth-child(1) a {
+  color: #ff5722;
 }
+
 /*navbar styling */
 .navbar {
-  padding-top: 10%;
+  padding: 1% 0 0 1%;
 }
 .nav li {
   display: inline-block;
@@ -222,57 +230,191 @@ ol li {
   color: white;
   text-decoration: none;
 }
-/****navbar end****/
 
-.match {
+.menu {
+  float: right;
+}
+/****navbar end****/
+.main {
+  padding: 2% 10%;
+}
+.section2 {
+  color: black;
+  /* border-top:5px solid darkgray; */
+  background-image: url("../img/colour.png");
+  padding-bottom: 150px;
+}
+
+.section3 {
+  color: black;
+  /* border-top:5px solid darkgray; */
+  background-image: url("../img/rectangleshape.png");
+  padding-bottom: 150px;
+}
+
+.about-title {
   padding-top: 0%;
   padding-bottom: 2%;
 }
-.info {
+.key-points {
   display: inline-flex;
   margin-top: 30px;
   column-count: 3;
 }
+
 .column {
+  float: left;
   width: 33%;
-  padding: 12px;
 }
+
+.column:nth-child(2) {
+  padding: 0 5%;
+}
+
+.row .column:nth-child(2) {
+  padding: 0 2%;
+}
+
 .column p {
   font-size: 12px;
   line-height: 15px;
+  color: darkgrey;
   padding-top: 9px;
 }
 
-/*news and press */
-.news {
+.key-image {
+  padding-top: 25px;
+}
+
+.key-image img {
+  width: 100%;
+}
+
+.press-title {
+  display: flex;
+  align-items: center;
+  font-size: larger;
   padding: 20px 10px;
 }
 
-.ul-posts li {
-  font-size: 15px;
-  line-height: 20px;
+.press-title img {
+  float: left;
+  padding-right: 5px;
+}
+
+.row {
+  margin: 0 -5px;
+  padding-top: 2%;
+  display: inline-flex;
+  column-count: 3;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.card span {
+  color: #ff5722;
+}
+
+.card ul {
+  padding-top: 20px;
+}
+
+.card ul li {
+  display: flex;
+  align-items: center;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.card ul li img {
+  max-width: 13px;
+}
+
+.card ul li span {
+  color: black;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .row .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    padding: 0 !important;
+  }
+
+  .row {
+    column-count: 1;
+    display: inline;
+  }
 }
 
 .paragraph {
   padding-top: 6%;
-  padding-left: 15%;
-  padding-right: 15%;
   padding-bottom: 3%;
 }
 .paragraph p {
   padding: 1%;
+  color: black;
 }
-.press {
-  column-count: 3;
 
-  margin-top: 30px;
+.news-footer {
+  float: right;
+  padding-top: 15px;
 }
-.col-4-footer {
-  background-color: white;
-  border-radius: 25px;
-  width: 299px;
-  height: 200px;
-  border: 1px solid;
-  padding: 10px 10px;
-  margin: 40px;
+
+.news-footer button {
+  color: #ff5722;
+  border-radius: 17px;
+  border-color: #ff5722;
+  background-color: floralwhite;
+  cursor: pointer;
+  width: 100px;
+  height: 34px;
+}
+
+.left-bar span,
+.right-bar span {
+  padding: 0;
+}
+
+.left-bar span:after {
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  box-shadow: inset -2px -5px 2px 1px rgb(0 0 0 / 20%);
+  content: "";
+  display: block;
+  width: 40%;
+  height: 30px;
+  background-color: aquamarine;
+}
+
+.footer .img2 {
+  background-image: url("../img/img2.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.right-bar span:after {
+  float: right;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  box-shadow: inset -2px -5px 2px 1px rgb(0 0 0 / 20%);
+  content: "";
+  display: block;
+  width: 40%;
+  height: 30px;
+  background-color: aquamarine;
 }
