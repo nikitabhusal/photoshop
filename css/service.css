@@ -30,10 +30,11 @@ body {
   float: left;
   padding: 0.5%;
   font-family: "Roboto-Regular";
+  color: #c2d6db;
 }
 .img11 {
-  width: 101.2%;
-  padding-left: 5%;
+  width: 95.15%;
+  padding-left: 6.3%;
   margin-top: -145px;
 }
 .paragraph {
@@ -48,10 +49,11 @@ body {
 }
 .grow1 {
   font-size: 13pt;
+  color: #83a9b4;
 }
 
 .grow1 span {
-  color: lightblue;
+  color: #90b8c0;
 }
 
 .services {
@@ -68,17 +70,17 @@ body {
   border-radius: 10px;
   width: 12%;
   text-align: center;
-  color: #a9d010;
+  color: #c77329;
 }
 
 .active {
   color: white;
-  background-color: #a9d010;
+  background-color: #c77329;
 }
 
 .hover {
   color: black;
-  border: 2px solid #a9d010;
+  border: 2px solid #c77329;
 }
 
 .div1 p {
@@ -101,7 +103,7 @@ body {
   font-size: 25pt;
   margin-bottom: 0;
   font-weight: bold;
-  color: #333c56;
+  color: #041e54;
 }
 .protect2 {
   font-size: 25pt;
@@ -132,13 +134,13 @@ body {
 
 .identity {
   text-align: center;
-  font-size: 60pt;
+  font-size: 55pt;
   margin-bottom: 0;
   color: #8080808a;
 }
 .dia {
   text-align: center;
-  font-size: 30pt;
+  font-size: 29pt;
 }
 
 .diagram1 {
@@ -192,7 +194,7 @@ ul {
 }
 
 .logo ul li:nth-child(2) {
-  color: #ff5722;
+  color: #c77329;
 }
 .rectangleimg {
   height: 40px;
@@ -251,7 +253,7 @@ hr {
   column-count: 2;
 }
 .socialmedia {
-  padding-left: 270px;
+  padding-left: 220px;
 }
 
 .main {
