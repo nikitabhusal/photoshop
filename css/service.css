@@ -1,8 +1,11 @@
 @font-face {
   font-family: "Roboto-Regular";
-  src: local("Roboto-Regular.otf"), url("Roboto-Regular.otf") format("opentype");
+  src: local("Roboto-Regular.otf"), url("Roboto-Regular.ttf") format("opentype");
 }
 
+body {
+  margin: 0;
+}
 #hero {
   background-image: url("../img/cc.png");
   color: white;
@@ -29,42 +32,88 @@
   font-family: "Roboto-Regular";
 }
 .img11 {
-  width: 58% !important;
-  padding-left: 15%;
+  width: 101.2%;
+  padding-left: 5%;
+  margin-top: -145px;
 }
 .paragraph {
-  margin: 130px 265px 0px 265px;
+  position: absolute;
+  width: 50%;
+  padding-left: 5%;
+  margin-top: 6%;
 }
 .grow {
-  font-size: 36pt;
+  font-size: 26pt;
+  margin-bottom: 0;
 }
 .grow1 {
-  font-size: 18pt;
+  font-size: 13pt;
 }
+
+.grow1 span {
+  color: lightblue;
+}
+
 .services {
+  padding: 2% 0 !important;
   display: flex;
   margin: 1.5px;
   background-color: #fff7f0;
 }
 .div1 {
-  margin: 1%;
-  border: 1px solid;
-  padding: 3px;
-  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
   width: 12%;
+  text-align: center;
+  color: #a9d010;
 }
+
+.active {
+  color: white;
+  background-color: #a9d010;
+}
+
+.hover {
+  color: black;
+  border: 2px solid #a9d010;
+}
+
+.div1 p {
+  padding: 0;
+  margin: 0;
+}
+
+.div1 p:nth-child(1) {
+  font-weight: bold;
+  font-size: large;
+}
+
 .div {
-  padding-top: 35px;
+  padding-top: 21px;
 }
 .protect {
   text-align: center;
 }
 .protect1 {
   font-size: 25pt;
-  font-style: regular;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #333c56;
+}
+.protect2 {
+  font-size: 25pt;
+  padding-top: 4%;
+  color: #333c56;
+  font-weight: bold;
+  border-top: solid darkgray;
+  margin-bottom: 0;
 }
 .cloud {
   font-size: 16pt;
+  padding-bottom: 4%;
 }
 
 .success {
@@ -73,13 +122,19 @@
   column-count: 3;
 }
 .succ {
-  width: 33%;
+  width: 30%;
   padding: 12px;
+}
+
+.succ img {
+  max-width: 340px;
 }
 
 .identity {
   text-align: center;
   font-size: 60pt;
+  margin-bottom: 0;
+  color: #8080808a;
 }
 .dia {
   text-align: center;
@@ -94,21 +149,17 @@
   padding-left: 30px;
 }
 .dig1 {
-  width: 1000px;
+  width: 100%;
   padding: 0px 0px 0px 30px;
 }
 .color {
   background-color: #ecf3f4;
 }
 .dig2 {
-  width: 1000px;
+  width: 100%;
   padding-bottom: 154px;
 }
 
-.line1 {
-  width: 500px;
-  height: 40px;
-}
 /*
 .rectangle {
   width: 40%;
@@ -116,20 +167,51 @@
 }
 */
 
+ol,
+ul {
+  list-style: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  float: left;
+}
+
+.logo ul {
+  width: 100%;
+}
+
+.logo ul li {
+  padding-left: 5px;
+  font-size: 30px;
+  line-height: 33px;
+}
+
+.logo ul li:nth-child(2) {
+  color: #ff5722;
+}
+.rectangleimg {
+  height: 40px;
+}
+
 .rectangleimg2 {
-  width: 750px;
-  height: 300px;
-  padding: 10px 0px 10px 450px;
+  height: 120%;
+  float: right;
 }
-/*.rectangleimg {
-  width: 40%;
-  background-color: #041e54;
+
+.img-box {
+  height: 250px;
+  width: 68%;
+  float: right;
+  margin-right: -12.5%;
+  margin-top: -185px;
+  background-color: #ecf3f4;
 }
-.logoimg {
-  width: 40%;
-  background-color: #041e54;
-}
-*/
+
 #footer {
   background-color: #041e54;
 }
@@ -149,15 +231,18 @@
   padding: 20px 20px;
   color: white;
 }
+
 hr {
-  width: 90%;
+  width: 100%;
   text-align: center;
+  border-color: #00b8ff4f;
   background-color: #041e54;
 }
 .matchpoint {
   color: white;
-  padding: 0px 60px;
+  padding: 3% 0%;
 }
+
 .matchpoint p {
   font-size: 16pt;
   margin: 0px;
@@ -167,4 +252,66 @@ hr {
 }
 .socialmedia {
   padding-left: 270px;
+}
+
+.main {
+  padding: 2% 10%;
+  padding-bottom: 0;
+}
+.section3 {
+  padding-top: 0%;
+  color: black;
+  background-image: url("../img/rectangleshape.png");
+  /* clip-path: polygon(0 0, 60% 0, 60% 25%, 100% 25%, 100% 100%, 0 100%); */
+}
+.project {
+  color: white;
+}
+.line-hr {
+  padding-top: 10%;
+}
+.line1 {
+  margin-left: -13%;
+  height: 40px;
+}
+
+.twodiv {
+  padding-top: 2%;
+}
+.four-rows {
+  width: 100%;
+  padding: 2% 0%;
+  display: inline-flex;
+  column-count: 4;
+}
+.column-four {
+  float: left;
+  width: 25%;
+}
+
+#footer {
+  background-color: #041e54;
+}
+.four-rows {
+  width: 100%;
+  padding: 2% 0%;
+  display: inline-flex;
+  column-count: 4;
+}
+.footer-cards li {
+  text-decoration: none;
+  font-size: 14pt;
+  line-height: 1.8;
+}
+.footer-cards ul {
+  color: lightblue;
+  list-style-type: none;
+}
+
+.footer-cards ul li:nth-child(1) {
+  color: white;
+}
+
+.line-hr {
+  padding-top: 10%;
 }
