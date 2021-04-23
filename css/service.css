@@ -185,6 +185,7 @@ ul {
 
 .logo ul {
   width: 100%;
+  padding-left: 0px;
 }
 
 .logo ul li {
@@ -200,6 +201,10 @@ ul {
   height: 40px;
 }
 
+.menu {
+  padding-top: 30px;
+  padding-left: 1100px;
+}
 .rectangleimg2 {
   height: 120%;
   float: right;
