@@ -1,195 +1,28 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans);
-/* RESET CSS BEGIN */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/*RESET CSS END*/
-
-/* HELPER CLASSES BEGIN */
-.alignLeft {
-  float: left;
-}
-
-.alignRight {
-  float: right;
-}
-
-.margin-bottom-10 {
-  margin-bottom: 10px;
-}
-
-.margin-bottom-20 {
-  margin-bottom: 20px;
-}
-
-.margin-bottom-30 {
-  margin-bottom: 30px;
-}
-
-.margin-bottom-40 {
-  margin-bottom: 40px;
-}
-
-strong,
-b {
-  font-size: 30pt;
-}
-
-em,
-i {
-  font-style: italic;
-}
-
-p,
-ul li,
-ol li {
-  font-size: 17px;
-  line-height: 24px;
-}
-
-/*HELPER CLASSES END*/
-
 @font-face {
   font-family: "Roboto-Regular";
-  src: local("Roboto-Regular.otf"), url("Roboto-Regular.ttf") format("opentype");
+  src: local("Roboto-Regular.otf"), url("Roboto-Regular.otf") format("opentype");
 }
 
-.container {
+body {
+  margin: 0;
+}
+#hero {
   background-image: url("../img/cc.png");
   color: white;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  max-height: 800px;
-  position: relative;
-  padding-top: 20px;
 }
-.header {
-  margin: 0 2%;
+.container {
+  max-width: 1200px;
+  height: 12%;
+  /*width: 40%;*/
+  margin-bottom: -6px;
+  position: relative;
+  padding: 40px 20px 0;
 }
 .container1 {
+  width: 100%;
   background-color: #fff7f0;
 }
 
@@ -201,22 +34,22 @@ ol li {
   color: #c2d6db;
 }
 .img11 {
-  width: 95.15%;
-  padding-left: 6.3%;
+  width: 95.9%;
+  padding-left: 6.2%;
   margin-top: -145px;
 }
 .paragraph {
   position: absolute;
   width: 50%;
-  padding-left: 5%;
-  margin-top: 6%;
+  padding-left: 6%;
+  margin-top: -35px;
 }
 .grow {
-  font-size: 26pt;
+  font-size: 28px;
   margin-bottom: 0;
 }
 .grow1 {
-  font-size: 13pt;
+  font-size: 14px;
   color: #83a9b4;
 }
 
@@ -226,17 +59,25 @@ ol li {
 
 .services {
   padding: 2% 0 !important;
-  display: flex;
   margin: 1.5px;
+  width: 99%;
   background-color: #fff7f0;
+}
+
+.box-container {
+  float: left;
+  width: 12.8%;
+}
+.box-container:nth-child(1),
+.box-container:nth-child(9) {
+  width: 5%;
 }
 .div1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 10px;
-  padding: 15px;
+  padding: 15px 2%;
   background-color: white;
   border-radius: 10px;
-  width: 12%;
+  width: 85%;
   text-align: center;
   color: #c77329;
 }
@@ -262,10 +103,12 @@ ol li {
 }
 
 .div {
-  padding-top: 21px;
+  padding-top: 15px;
 }
 .protect {
   text-align: center;
+  display: inline-block;
+  margin: 1% 6%;
 }
 .protect1 {
   font-size: 25pt;
@@ -288,6 +131,7 @@ ol li {
 
 .success {
   display: inline-flex;
+  width: 100%;
   margin-top: 30px;
   column-count: 3;
 }
@@ -298,6 +142,7 @@ ol li {
 
 .succ img {
   max-width: 340px;
+  width: 100%;
 }
 
 .identity {
@@ -340,6 +185,17 @@ ol li {
 ol,
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ul li,
+ol li {
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .logo {
@@ -347,13 +203,20 @@ ul {
   align-items: center;
 }
 
+.logo p {
+  width: 100%;
+  padding-left: 30px;
+}
+
 .logo-img {
   float: left;
 }
 
 .logo ul {
-  width: 100%;
-  padding-left: 0px;
+  width: 40%;
+  min-width: 250px;
+  max-width: 250px;
+  border-right: solid 2px white;
 }
 
 .logo ul li {
@@ -369,18 +232,15 @@ ul {
   height: 40px;
 }
 
-.menu {
-  padding-top: 30px;
-  padding-left: 1100px;
-}
 .rectangleimg2 {
-  height: 120%;
+  height: 300px;
+  width: 105%;
   float: right;
 }
 
 .img-box {
   height: 250px;
-  width: 68%;
+  width: 65%;
   float: right;
   margin-right: -12.5%;
   margin-top: -185px;
@@ -426,7 +286,12 @@ hr {
   column-count: 2;
 }
 .socialmedia {
-  padding-left: 220px;
+  float: right;
+}
+
+.header {
+  margin: 0 2%;
+  padding-top: 2%;
 }
 
 .main {
@@ -448,6 +313,7 @@ hr {
 .line1 {
   margin-left: -13%;
   height: 40px;
+  width: 65%;
 }
 
 .twodiv {
