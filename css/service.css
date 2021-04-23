@@ -3,16 +3,6 @@
   src: local("Roboto-Regular.otf"), url("Roboto-Regular.ttf") format("opentype");
 }
 
-body {
-  margin: 0;
-}
-#hero {
-  background-image: url("../img/cc.png");
-  color: white;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
 .container {
   background-image: url("../img/cc.png");
   color: white;
@@ -22,6 +12,9 @@ body {
   max-height: 800px;
   position: relative;
   padding-top: 20px;
+}
+.header {
+  margin: 0 2%;
 }
 .container1 {
   background-color: #fff7f0;
