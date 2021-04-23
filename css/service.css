@@ -14,12 +14,14 @@ body {
   background-attachment: fixed;
 }
 .container {
-  max-width: 1200px;
-  height: 12%;
-  /*width: 40%;*/
-  margin: 0 auto;
+  background-image: url("../img/cc.png");
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  max-height: 800px;
   position: relative;
-  padding: 40px 20px;
+  padding-top: 20px;
 }
 .container1 {
   background-color: #fff7f0;
