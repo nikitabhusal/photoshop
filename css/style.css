@@ -282,17 +282,17 @@ ol li {
 }
 
 .column h3 {
-  font-size: 30pt;
+  font-size: 20pt;
 }
 .column p {
-  font-size: 16pt;
+  font-size: 11pt;
   line-height: 20px;
   color: #527088;
   padding-top: 9px;
 }
 
 .key-image {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .key-image img {
