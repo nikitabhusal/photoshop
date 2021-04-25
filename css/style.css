@@ -220,6 +220,10 @@ ol li {
   color: white;
 }
 
+.logo p {
+  width: 100%;
+  padding-left: 30px;
+}
 /*navbar styling */
 .navbar {
   padding: 2% 0 0 1%;
@@ -238,7 +242,8 @@ ol li {
 }
 .menu {
   float: right;
-  margin-top: -70px;
+  font-size:30px;
+  cursor:pointer;
 }
 /****navbar end****/
 .main {

@@ -7,7 +7,7 @@ body {
   margin: 0;
 }
 #hero {
-  background-image: url("../img/cc.png"), url("../img/images/img11.png");
+  background-image: url("../img/cc.png");
   color: white;
   background-size: cover;
   background-position: center;
@@ -16,8 +16,6 @@ body {
 }
 .container {
   max-width: 1200px;
-  height: 12%;
-  /*width: 40%;*/
   margin-bottom: -6px;
   position: relative;
   padding: 40px 20px 0;
@@ -42,11 +40,9 @@ body {
 .paragraph {
   position: absolute;
   width: 50%;
-  padding-left: 6%;
+  margin-left: 0%;
+  padding-right: 2%;
   margin-top: -35px;
-  background-image: url("../img/images/img11.png");
-  background-repeat: no-repeat;
-  background-size: 900px 300px;
 }
 .grow {
   font-size: 26pt;
@@ -203,6 +199,8 @@ ol li {
 }
 
 .logo {
+  margin-left: -6%;
+  padding-right: 2%;
   display: flex;
   align-items: center;
   padding-top: 40px;
@@ -225,8 +223,9 @@ ol li {
 }
 
 .menu {
+  font-size:30px;
+  cursor:pointer;
   float: right;
-  margin-top: -70px;
 }
 
 .logo ul li {
@@ -304,7 +303,11 @@ ol li {
 }
 
 .header {
-  margin: 0 2%;
+  background-image: url("../img/images/img11.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 373px;
+  margin-left: 8%;
   padding-top: 2%;
 }
 
