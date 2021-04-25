@@ -250,7 +250,6 @@ ol li {
   background-image: url("../img/colour.png");
   padding-bottom: 150px;
   background-size: cover;
-  padding-left: 230px;
 }
 
 .section3 {
@@ -264,13 +263,11 @@ ol li {
   padding-top: 0%;
   padding-bottom: 45px;
   font-size: 26pt;
-  padding-left: 120px;
 }
 .key-points {
   display: inline-flex;
   margin-top: 20px;
   column-count: 3;
-  margin-left: 120px;
 }
 
 .column {
@@ -280,6 +277,14 @@ ol li {
 .column-four {
   float: left;
   width: 25%;
+}
+
+.column-four:nth-child(2){
+  padding-left: 5%;
+}
+
+.column-four:nth-child(3) {
+  padding-right: 5%;
 }
 
 .column:nth-child(2) {
@@ -383,13 +388,12 @@ ol li {
 }
 
 .paragraph {
-  padding-top: 35%;
+  padding-top: 315px;
   padding-bottom: 3%;
   font-size: 16pt;
   background-image: url("../img/img1.png");
   background-repeat: no-repeat;
   background-size: 900px 300px;
-  padding-left: 120px;
 }
 .paragraph p {
   padding: 1%;
