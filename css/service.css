@@ -451,13 +451,3 @@ a:hover {
   background-color: #c77329;
   color: white;
 }
-@media screen and (max-width: 600px) {
-  .matchpoint {
-    padding: 3% 0%;
-  }
-  .matchpoint p {
-    font-size: 14pt;
-    margin: 0px;
-    color: #8a9ec9;
-  }
-}
